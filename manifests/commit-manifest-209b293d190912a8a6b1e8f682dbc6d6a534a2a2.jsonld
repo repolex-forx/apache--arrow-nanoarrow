@@ -42,9 +42,15 @@
       "repolex:graphType": "pr",
       "repolex:graphFilePath": "pr/pr.nq.gz",
       "repolex:graphFileSize": 433823
+    },
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "ast",
+      "repolex:graphFilePath": "aggregate/ast/209b293d190912a8a6b1e8f682dbc6d6a534a2a2/chunk-001.nq.gz",
+      "repolex:graphFileSize": 47581517
     }
   ],
-  "repolex:parseStatus": "metadata_complete",
+  "repolex:parseStatus": "ast_complete",
   "repolex:parsedAt": "2026-11-22T06:09:13.194955+00:00",
   "repolex:parserVersion": "0.1.10",
   "git:tagName": "apache-arrow-nanoarrow-0.9.0.dev"
