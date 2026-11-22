@@ -1,0 +1,11 @@
+{
+  "org": "apache",
+  "repo": "arrow-nanoarrow",
+  "versions": [
+    {
+      "commit": "209b293d190912a8a6b1e8f682dbc6d6a534a2a2",
+      "tag": "apache-arrow-nanoarrow-0.9.0.dev",
+      "parsed_at": "2026-11-22T10:22:39.076473+00:00"
+    }
+  ]
+}
