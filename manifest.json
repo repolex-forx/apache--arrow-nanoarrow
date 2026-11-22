@@ -487,7 +487,9 @@
           "source": "lsp",
           "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.13/site-packages/numpy/random/_generator.pyi"
         }
-      ]
+      ],
+      "repolex": "aggregate/repolex/209b293d190912a8a6b1e8f682dbc6d6a534a2a2/chunk-001.nq.gz",
+      "dep": "dep/209b293d190912a8a6b1e8f682dbc6d6a534a2a2.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",
