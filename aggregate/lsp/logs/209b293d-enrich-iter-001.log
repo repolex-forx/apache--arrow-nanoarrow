@@ -1,0 +1,77 @@
+[2026-11-22T06:18:14Z] === ENRICH ITERATION 1 START | repo=apache/arrow-nanoarrow sha=209b293d ===
+[2026-11-22T06:18:14Z] [iter=1] PHASE START: enrich repo=apache/arrow-nanoarrow sha=209b293d runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/209b293d-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/209b293d190912a8a6b1e8f682dbc6d6a534a2a2.nq.gz
+[2026-11-22T06:18:14Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-22T06:18:43Z] [iter=1] AST store loaded triples=3128522 load_secs=28 mem_mb=958 MB
+[2026-11-22T06:18:43Z] [iter=1] Step 2: Finding LSP targets mem_mb=958 MB
+[2026-11-22T06:18:47Z] [iter=1] LSP targets found call_sites=29184 imports=745 extends=31 implements=0 secs=4
+[2026-11-22T06:18:49Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=958 MB
+[2026-11-22T06:19:08Z] [iter=1] Position index built positions=202664 nodes_with_types=248281 secs=20 mem_mb=958 MB
+[2026-11-22T06:19:08Z] [iter=1] Step 3: Starting LSP resolution mem_mb=958 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T06:19:08Z] [iter=1] Resolving target type target_type=call_site count=29184
+[2026-11-22T06:19:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=0 resolved=0 errors=0 current=src/nanoarrow/common/utils_test.cc
+[2026-11-22T06:19:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=3 resolved=131 errors=0 current=src/nanoarrow/common/schema_test.cc
+[2026-11-22T06:20:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=4 resolved=207 errors=0 current=src/nanoarrow/testing/testing.cc
+[2026-11-22T06:29:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.0 files_done=5 resolved=666 errors=0 current=thirdparty/flatcc/src/runtime/refmap.c
+[2026-11-22T06:30:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.9 files_done=6 resolved=742 errors=0 current=src/nanoarrow/ipc/decoder_test.cc
+[2026-11-22T06:33:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.8 files_done=8 resolved=943 errors=0 current=src/nanoarrow/ipc/flatcc_generated.h
+[2026-11-22T07:46:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.4 files_done=9 resolved=4740 errors=0 current=src/nanoarrow/ipc/writer.c
+[2026-11-22T07:48:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.3 files_done=10 resolved=4826 errors=0 current=src/nanoarrow/common/schema.c
+[2026-11-22T07:51:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.8 files_done=11 resolved=5049 errors=0 current=thirdparty/flatcc/src/runtime/builder.c
+[2026-11-22T07:58:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.1 files_done=12 resolved=5364 errors=0 current=src/nanoarrow/common/array.c
+[2026-11-22T08:02:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.5 files_done=13 resolved=5580 errors=0 current=src/nanoarrow/ipc/encoder.c
+[2026-11-22T08:05:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.7 files_done=14 resolved=5742 errors=0 current=r/src/buffer.c
+[2026-11-22T08:06:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.5 files_done=17 resolved=5801 errors=0 current=src/nanoarrow/ipc/decoder.c
+[2026-11-22T08:14:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.5 files_done=18 resolved=6213 errors=0 current=src/nanoarrow/device/metal_test.cc
+[2026-11-22T08:15:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.5 files_done=21 resolved=6282 errors=0 current=src/nanoarrow/hpp/view_test.cc
+[2026-11-22T08:17:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=119.5 files_done=24 resolved=6381 errors=0 current=src/nanoarrow/integration/ipc_integration.cc
+[2026-11-22T08:18:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.5 files_done=26 resolved=6457 errors=0 current=r/src/altrep.c
+[2026-11-22T08:19:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.2 files_done=27 resolved=6489 errors=0 current=r/src/convert_array.c
+[2026-11-22T08:20:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.0 files_done=28 resolved=6523 errors=0 current=r/src/materialize_int.h
+[2026-11-22T08:20:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.7 files_done=31 resolved=6559 errors=0 current=src/nanoarrow/common/array_stream_test.cc
+[2026-11-22T08:24:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.1 files_done=33 resolved=6715 errors=0 current=src/nanoarrow/ipc/writer_test.cc
+[2026-11-22T08:26:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.7 files_done=36 resolved=6862 errors=0 current=r/src/materialize.c
+[2026-11-22T08:28:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.6 files_done=37 resolved=6947 errors=0 current=src/nanoarrow/common/utils.c
+[2026-11-22T08:29:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.1 files_done=38 resolved=6983 errors=0 current=src/nanoarrow/integration/c_data_integration_test.cc
+[2026-11-22T08:30:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.8 files_done=39 resolved=7025 errors=0 current=src/nanoarrow/device/cuda_test.cc
+[2026-11-22T08:30:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.5 files_done=45 resolved=7075 errors=0 current=src/nanoarrow/hpp/buffer_test.cc
+[2026-11-22T08:33:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.2 files_done=48 resolved=7204 errors=0 current=r/src/ipc.c
+[2026-11-22T08:34:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.0 files_done=49 resolved=7242 errors=0 current=r/src/version.c
+[2026-11-22T08:34:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.7 files_done=52 resolved=7278 errors=0 current=r/src/convert.c
+[2026-11-22T08:36:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.3 files_done=53 resolved=7351 errors=0 current=src/nanoarrow/integration/c_data_integration.cc
+[2026-11-22T08:38:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.2 files_done=55 resolved=7449 errors=0 current=examples/linesplitter/linesplitter.cc
+[2026-11-22T08:40:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.9 files_done=57 resolved=7543 errors=0 current=src/nanoarrow/device/device_test.cc
+[2026-11-22T08:41:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.1 files_done=61 resolved=7650 errors=0 current=examples/cmake-minimal/src/library.c
+[2026-11-22T08:43:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.3 files_done=63 resolved=7752 errors=0 current=src/nanoarrow/ipc/codecs_test.cc
+[2026-11-22T08:44:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.0 files_done=71 resolved=7791 errors=0 current=src/nanoarrow/hpp/unique.hpp
+[2026-11-22T08:44:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.8 files_done=75 resolved=7824 errors=0 current=src/nanoarrow/ipc/codecs.c
+[2026-11-22T08:45:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.4 files_done=78 resolved=7852 errors=0 current=examples/vendored-ipc/src/library.c
+[2026-11-22T08:46:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.1 files_done=81 resolved=7884 errors=0 current=src/nanoarrow/hpp/buffer.hpp
+[2026-11-22T08:46:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.7 files_done=86 resolved=7915 errors=0 current=src/nanoarrow/hpp/exception_test.cc
+[2026-11-22T08:47:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.6 files_done=89 resolved=7958 errors=0 current=r/src/materialize_blob.h
+[2026-11-22T08:48:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.1 files_done=108 resolved=7996 errors=0 current=examples/cmake-minimal/src/app.c
+[2026-11-22T08:48:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.8 files_done=115 resolved=8027 errors=0 current=r/src/schema.h
+[2026-11-22T08:51:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=153.0 files_done=125 resolved=8236 errors=0 current=python/tests/test_array.py
+[2026-11-22T08:52:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=154.1 files_done=127 resolved=8477 errors=0 current=python/tests/test_c_array.py
+[2026-11-22T08:54:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=155.8 files_done=129 resolved=8677 errors=0 current=python/tests/test_nanoarrow.py
+[2026-11-22T08:55:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=157.6 files_done=133 resolved=8949 errors=0 current=python/tests/test_array_stream.py
+[2026-11-22T08:56:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=158.5 files_done=135 resolved=9066 errors=0 current=dev/release/release_tools.py
+[2026-11-22T08:57:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=159.0 files_done=136 resolved=9143 errors=0 current=dev/release/check-rat-report.py
+[2026-11-22T08:57:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=159.5 files_done=140 resolved=9346 errors=0 current=python/tests/test_device.py
+[2026-11-22T08:58:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.1 files_done=144 resolved=9440 errors=0 current=python/src/nanoarrow/ipc.py
+[2026-11-22T08:59:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.9 files_done=145 resolved=9486 errors=0 current=python/tests/test_capsules.py
+[2026-11-22T09:00:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=162.1 files_done=151 resolved=9680 errors=0 current=python/tests/test_ipc.py
+[2026-11-22T09:00:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=162.7 files_done=154 resolved=9757 errors=0 current=ci/scripts/test_bundle.py
+[2026-11-22T09:01:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=163.4 files_done=157 resolved=9807 errors=0 current=python/tests/test_extension_canonical.py
+[2026-11-22T09:02:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=164.1 files_done=166 resolved=9938 errors=0 current=python/src/nanoarrow/extension.py
+[2026-11-22T09:02:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=164.7 files_done=173 resolved=9987 errors=0 current=dev/release/post-03-bump-versions.sh
+[2026-11-22T09:03:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.7 files_done=175 resolved=10031 errors=0 current=dev/benchmarks/benchmark-run-all.sh
+[2026-11-22T09:04:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=166.3 files_done=183 resolved=10057 errors=0 current=dev/release/post-01-upload.sh
+[2026-11-22T09:04:52Z] [iter=1] Target type resolved target_type=call_site resolved=10074 errors=0 secs=9944 mem_mb=958 MB
+[2026-11-22T09:04:52Z] [iter=1] Resolving target type target_type=import_statement count=745
+[2026-11-22T09:05:02Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=166.8 files_done=129 resolved=299 errors=0 current=r/src/buffer.c
+[2026-11-22T09:05:06Z] [iter=1] Target type resolved target_type=import_statement resolved=324 errors=0 secs=14 mem_mb=958 MB
+[2026-11-22T09:05:06Z] [iter=1] Resolving target type target_type=extends_clause count=31
+[2026-11-22T09:05:10Z] [iter=1] Target type resolved target_type=extends_clause resolved=26 errors=0 secs=4 mem_mb=958 MB
+[2026-11-22T10:19:20Z] [iter=1] Step 5: Writing final enrichment file triples=155398
+[2026-11-22T10:19:22Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/209b293d190912a8a6b1e8f682dbc6d6a534a2a2.nq.gz size_kb=3309
+[2026-11-22T10:19:22Z] [iter=1] PHASE END: enrich elapsed_s=14468 elapsed_min=241.1 total_triples=155398
